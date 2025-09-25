@@ -1,0 +1,9 @@
+[
+  { "startSec": 0.0,   "endSec": 12.5,  "title": "Intro",                "desc": "오프닝 로고 및 배경음" },
+  { "startSec": 12.5,  "endSec": 38.0,  "title": "제품 등장",            "desc": "제품 전체샷, 카메라 팬" },
+  { "startSec": 38.0,  "endSec": 65.2,  "title": "기능 1: 빠른 설정",     "desc": "설정 화면 데모 및 자막" },
+  { "startSec": 65.2,  "endSec": 92.0,  "title": "기능 2: 스마트 추천",   "desc": "추천 UI와 사용 시나리오" },
+  { "startSec": 92.0,  "endSec": 128.3, "title": "사용자 후기 하이라이트", "desc": "3명 인터뷰 클립 모음" },
+  { "startSec": 128.3, "endSec": 156.7, "title": "가격/프로모션",         "desc": "가격 카드 & 프로모션 배너" },
+  { "startSec": 156.7, "endSec": 180.0, "title": "콜투액션 & 엔딩",       "desc": "웹사이트/QR, 엔드카드" }
+]

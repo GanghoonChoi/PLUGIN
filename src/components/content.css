@@ -1,0 +1,10 @@
+.plugin-content {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  color: var(--uxp-host-text-color-secondary, white);
+  margin: 5px;
+  border: 1px solid #808080;
+  overflow: scroll;
+  height: 220px;
+}

@@ -1,0 +1,11 @@
+.plugin-footer {
+  color: #fff;
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.plugin-footer > * {
+  margin: 5px;
+}
