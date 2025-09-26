@@ -88,13 +88,13 @@ const AuthScreen = ({ onLoginSuccess }) => {
   };
 
   return (
+    <sp-body>
     <div className="auth-screen">
       <div className="auth-container">
         {/* 브랜딩 헤더 */}
         <div className="auth-header">
           <div className="brand-logo">
-            <div className="logo-icon">J</div>
-            <h1 className="brand-name">Jaster Studio</h1>
+            <h1 className="brand-name">Lasker Studio</h1>
           </div>
           <p className="auth-subtitle">
             {isLogin ? 'Sign in / Login' : 'Create Account'}
@@ -159,27 +159,34 @@ const AuthScreen = ({ onLoginSuccess }) => {
 
           {/* 액션 버튼들 */}
           <div className="auth-actions">
-            <button
+            <sp-button
               type="submit"
-              className="btn btn-primary"
-              disabled={isLoading}
+              variant="primary"
+              // disabled={isLoading}
             >
               {isLoading ? (
                 <span className="loading-spinner"></span>
               ) : (
                 isLogin ? 'Login' : 'Sign up'
               )}
-            </button>
+            </sp-button>
 
             <button
               type="button"
-              className="btn btn-secondary"
+              style={{ text: '10px' }}
               onClick={toggleMode}
               disabled={isLoading}
             >
               {isLogin ? 'Sign up' : 'Back to Login'}
             </button>
           </div>
+          <sp-button-group style={{ minWidth: 'max-content' }}>
+              <sp-button treatment="fill" variant="primary" onclick="spAlert(this, '<sp-button> clicked!')">Primary, Fill</sp-button>
+              <sp-button treatment="fill" variant="secondary">Secondary, Fill</sp-button>
+              <sp-button treatment="fill" variant="negative">Negative, Fill</sp-button>
+            </sp-button-group>
+
+
         </form>
 
         {/* 추가 정보 */}
@@ -193,6 +200,7 @@ const AuthScreen = ({ onLoginSuccess }) => {
         </div>
       </div>
     </div>
+    </sp-body>
   );
 };
 

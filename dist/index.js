@@ -34117,7 +34117,7 @@ var AuthScreen = function AuthScreen(_ref) {
     });
     setError('');
   };
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("sp-body", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "auth-screen"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "auth-container"
@@ -34125,11 +34125,9 @@ var AuthScreen = function AuthScreen(_ref) {
     className: "auth-header"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "brand-logo"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "logo-icon"
-  }, "J"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     className: "brand-name"
-  }, "Jaster Studio")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+  }, "Lasker Studio")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "auth-subtitle"
   }, isLogin ? 'Sign in / Login' : 'Create Account')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
     className: "auth-form",
@@ -34183,22 +34181,38 @@ var AuthScreen = function AuthScreen(_ref) {
     className: "error-message"
   }, error), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "auth-actions"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("sp-button", {
     type: "submit",
-    className: "btn btn-primary",
-    disabled: isLoading
+    variant: "primary"
+    // disabled={isLoading}
   }, isLoading ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "loading-spinner"
   }) : isLogin ? 'Login' : 'Sign up'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     type: "button",
-    className: "btn btn-secondary",
+    style: {
+      text: '10px'
+    },
     onClick: toggleMode,
     disabled: isLoading
-  }, isLogin ? 'Sign up' : 'Back to Login'))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, isLogin ? 'Sign up' : 'Back to Login')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("sp-button-group", {
+    style: {
+      minWidth: 'max-content'
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("sp-button", {
+    treatment: "fill",
+    variant: "primary",
+    onclick: "spAlert(this, '<sp-button> clicked!')"
+  }, "Primary, Fill"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("sp-button", {
+    treatment: "fill",
+    variant: "secondary"
+  }, "Secondary, Fill"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("sp-button", {
+    treatment: "fill",
+    variant: "negative"
+  }, "Negative, Fill"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "auth-footer"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "auth-info"
-  }, isLogin ? '계정이 없으신가요? Sign up을 클릭하세요.' : '이미 계정이 있으신가요? Login으로 돌아가세요.'))));
+  }, isLogin ? '계정이 없으신가요? Sign up을 클릭하세요.' : '이미 계정이 있으신가요? Login으로 돌아가세요.')))));
 };
 /* harmony default export */ __webpack_exports__["default"] = (AuthScreen);
 
